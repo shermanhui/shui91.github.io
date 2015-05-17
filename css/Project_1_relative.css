@@ -34,7 +34,7 @@
 }
 
 @media screen and (min-width: 992px) {
-	#Featured-HR {
+	.featured-hr {
 		display: none;
 	}
 
