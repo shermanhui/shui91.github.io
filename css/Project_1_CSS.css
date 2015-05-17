@@ -1,6 +1,6 @@
 /* Common CSS */
 .project-title {
-  margin-top:0px;
+  margin-top: 0px;
 }
 
 .top-buffer {
@@ -10,16 +10,6 @@
 
 .full-buffer {
   padding-top: 70px;
-}
-
-
-/* Disabled links */
-a.disabled-link,
-a.disabled-link:visited ,
-a.disabled-link:active,
-a.disabled-link:hover {
-    background-color:#d9d9d9 !important;
-    color:#aaa !important;
 }
 
 /* Line between Jumbotron and Featured Work*/
@@ -38,7 +28,7 @@ hr {
 }
 
 .nav__list {
-	width:100%;
+	width: 100%;
 	padding: 0;
 	margin: 0;
 }
@@ -55,25 +45,25 @@ hr {
 /* JUMBOTRON */
 html,body {
   padding-top: 5px;
-	height:100%;
-	width:100%;
+	height: 100%;
+	width: 100%;
 }
 
 .jumbotron {
 	background-color:inherit;
 }
 .container-full-bg {
-	width:100%;
-	height:100%;
-	max-width:100%;
-	background-position:center;
-	background-size:cover;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	background-position: center;
+	background-size: cover;
 }
 
 .container-full-bg .container, 
 .container-full-bg .container .jumbotron {
-	height:100%;
-	width:100%;
+	height: 100%;
+	width: 100%;
 }
 
 /* FOOTER CSS */
@@ -93,40 +83,44 @@ html,body {
 }
 
 .footer, .caption a {
-	color:inherit;
+	color: inherit;
 	text-decoration: none;
 }
 
 .footer a {
-	padding:5px;
+	padding: 5px;
 }
 
 /* ON HOVER EFFECT */
 
 /*Footer Icon Hover*/
 .fa:hover {
-  color:black;
+  color: black;
 }
 
 /*Featured Work Hover*/
 .thumbnail {
-  position:relative;
-  overflow:hidden;
+  position: relative;
+  overflow: hidden;
   border: 0;
 }
  
 .caption {
-  position:absolute;
-  top:0;
-  right:0;
-  background:rgba(285,285,290,0.5);
-  width:100%;
-  height:100%;
-  padding:2%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(285,285,290,0.5);
+  width: 100%;
+  height: 100%;
+  padding: 2%;
   display: none;
-  text-align:center;
-  color:#fff !important;
-  z-index:2;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Doubling the specificity of the .caption selector*/
+.caption.caption {
+  color: #fff;
 }
 
 .caption h3 {
