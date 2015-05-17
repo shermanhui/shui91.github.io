@@ -1,0 +1,126 @@
+DOCTYPE html>
+<html>
+	<head>
+		<title>Sherman's Portfolio</title>
+        	<meta charset="UTF-8"/>
+        	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        	<link rel="stylesheet" href="css/bootstrap.css">
+        	<link rel="stylesheet" href="css/Project_1_CSS.css">
+        	<link rel="stylesheet" href="css/Project_1_relative.css">
+        	<link rel="stylesheet" href="Project_1-assets/font-awesome-4.3.0/css/font-awesome.min.css">
+	</head>
+	<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- TO DO: Link To About Me in Navbar-Brand and add Icon-->
+            <a class="navbar-brand" href="#">MENU</a>          
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav">   
+                <li><a href="Project_1.html">HOME</a></li>            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PORTFOLIO <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">APPLICATIONS</a></li>
+                        <li class="divider"></li>
+                        <li><a href="Project_1-photog.html">PHOTOGRAPHY</a></li>
+                        <li class="divider"></li>
+                        <li><a href="Project_1-web-dev-page.html">WEB DEVELOPMENT</a></li>
+                    </ul>
+                </li>
+                <!--EXAMPLE OF: On Hover Active Link-->
+                <li class="active"><a href="#">BLOG<span class="sr-only"></span></a></li>
+                <li><a href="#">RESUME</a></li>
+                <li><a href="Project_1-contact.html">CONTACT</a>
+            </ul>
+        <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="LOOK FOR IT">
+            </div>
+            <button type="submit" class="btn btn-default">SUBMIT</button>
+        </form>
+        </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav> 
+    <!--END OF NAVBAR-->
+    <div class="container top-buffer">
+    <div class="row">
+        <div class="col-md-12">
+            <small><i></i>Add alerts if form ok... success, else error.</i></small>
+            <div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent. (If form ok!)</strong></div>   
+            <div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs. (If form error!)</strong></div>
+        </div>
+    <form role="form" action="" method="post" >
+        <div class="col-lg-6">
+            <div class="well well-sm"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Required Field</strong></div>
+            <div class="form-group">
+                <label for="InputName">Your Name</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="InputEmail">Your Email</label>
+                <div class="input-group">
+                    <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="InputMessage">Message</label>
+                <div class="input-group">
+                    <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+            </div>
+            <div class="form-group">
+                <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" name="InputReal" id="InputReal" required>
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+            </div>
+            <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+        </div>
+    </form>
+    <hr class="featurette-divider hidden-lg">
+    <div class="col-lg-5 col-md-push-1">
+        <address>
+        <h3>Office Location</h3>
+        <p class="lead"><a href="#">The Pentagon<br>Washington, DC 20301</a>
+        <br>Phone: XXX-XXX-XXXX<br>
+        Fax: XXX-XXX-YYYY
+        </p>
+        </address>
+    </div>
+    </div>
+    </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="navbar-text pull-right">
+                    <a href="#"><i class="fa fa-linkedin fa-2x text-muted"></i></a>
+                    <a href="#"><i class="fa fa-instagram fa-2x text-muted"></i></a>
+                    <a href="#"><i class="fa fa-facebook-square fa-2x text-muted"></i></a>
+                    <a href="#"><i class="fa fa-envelope-o fa-2x text-muted"></i></a>
+                </div>
+                <div class="navbar-text pull-left">
+                    <p class="text-muted">Sherman Hui - Front End Developer</p>
+                </div>                
+            </div>
+        </footer>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/Project_1_JS.js"></script>
+	</body>
+</html>
