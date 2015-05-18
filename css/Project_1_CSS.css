@@ -12,8 +12,7 @@
   padding-top: 70px;
 }
 
-/* Line between Jumbotron and Featured Work*/
-hr {
+hr { /* Line between Jumbotron and Featured Work*/
     border: 0;
     height: 1px;
     background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
@@ -52,8 +51,6 @@ html,body {
 .jumbotron {
 	background-color:inherit;
 }
-
-
 
 .container-full-bg {
 	width: 100%;
@@ -142,4 +139,13 @@ html,body {
   top: 0;
   line-height: 14px;
 }
+
+/*Layer over image to improve text readability*/
+.layer {
+    background-color: rgba(285, 285, 290, 0.45);
+    position: absolute;
+    left: 0; /*pushes all the way to the left*/
+    width: 100%;
+}
+
 
