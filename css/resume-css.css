@@ -48,8 +48,8 @@ a:hover {
 }
 
 .hire-me:hover {
-	background-color: white;
-	border-color: white;
+	background-color: rgba(255,255,255, 0.75);
+	border-color: black;
 	color: black;
 }
 
