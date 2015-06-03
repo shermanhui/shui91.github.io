@@ -17,8 +17,31 @@ var bio = {
 	"location" : "Vancouver",
 	"descriptions" : [
 		"Sherman Hui graduated with a Bachelor of Arts in Economics and a minor in Commerce at the University of British Columbia. Currently, he is working in the retail banking industry at TD Canada Trust. Although he has a formal degree under the belt, he felt that he wasn't truly satisfied with his education and had yet to find a career that inspires true passion.  ", "As of April 2015 he has been actively involved in Massively Open Online Courses (MOOCs) to broaden his skill sets and explore various fields to find his true passion. Currently, he is completing his Front End Nanodegree at Udacity and aims to complete the Full Stack Nanodegree track afterwards.", "Ultimately, Sherman hopes to attain a full-time entry level position as a Front End Developer and move on to a Full Stack position in the exciting and ever dynamic field of web development."],
-	"skills" : [
-	"HTML", "CSS", "JavaScript", "jQuery", "Python", "WordPress"
+	"skills" : [{
+		"name" : "HTML",
+		"percentage" : 75
+	},
+	{
+		"name" : "CSS",
+		"percentage" : 75
+	},
+	{
+		"name" : "JavaScript",
+		"percentage" : 50
+	},
+	{
+		"name" : "jQuery",
+		"percentage" : 50
+	},
+	{
+		"name" : "Python",
+		"percentage" : 55
+	},
+	{
+		"name" : "WordPress",
+		"percentage" : 70
+	}
+	// "HTML", "CSS", "JavaScript", "jQuery", "Python", "WordPress"
 	],
 	"picture" : "https://placeimg.com/555/333/tech",
 	"contacts" : {
@@ -31,18 +54,19 @@ var bio = {
 		$('.skills-container').prepend(HTMLskillsHeader);
 		$('.profile-container').prepend(HTMLprofileHeader);
 
-		var formattedPic = HTMLprofilePic.replace("%data%", bio.picture)
+		var formattedPic = HTMLprofilePic.replace("%data%", bio.picture);
 		$('.profile-info').append(formattedPic);
 		$('.profile-info').append(HTMLprofilePara);
 
-		for (skill in bio.skills) {
-			var formattedSkill = HTMLskillsItem.replace("%data%", bio.skills[skill])
+		for (var skill in bio.skills) {
+			var HTMLskillsChart = HTMLskillsItem.replace("%percentage%", bio.skills[skill].percentage)
+			var formattedSkill = HTMLskillsChart.replace("%data%", bio.skills[skill].name);
 			$(".skills-list").append(formattedSkill);
 		}
 
-		for (description in bio.descriptions) {
-			var formattedDescription = HTMLprofileInfo.replace("%data%", bio.descriptions[description])
-			$(".profile-para").append(formattedDescription)
+		for (var description in bio.descriptions) {
+			var formattedDescription = HTMLprofileInfo.replace("%data%", bio.descriptions[description]);
+			$(".profile-para").append(formattedDescription);
 		}
 	}
 };
@@ -80,14 +104,14 @@ var education = {
 	 ],
 	 "display" : function() {
 	 	$(".education-container").prepend(HTMLschoolHeader);
-	 	for (school in education.schools) {
+	 	for (var school in education.schools) {
 	 		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
 	 		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
 	 		var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
 	 		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
 	 		var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
 
-	 		var formattedEduList = (formattedName + formattedDegree + formattedMajor + formattedDates)
+	 		var formattedEduList = (formattedName + formattedDegree + formattedMajor + formattedDates);
 
 	 		$(".education-list").append(formattedEduList);
 
@@ -96,9 +120,9 @@ var education = {
 	 	}
 
 	 	$(".education-container").append(HTMLonlineStart);
-	 	$(".online-education-row").append(HTMLonlineHeader)
+	 	$(".online-education-row").append(HTMLonlineHeader);
 
-	 	for (onlineCourse in education.onlineCourses) {
+	 	for (var onlineCourse in education.onlineCourses) {
 	 		var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineCourse].title);
 	 		var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineCourse].school);
 	 		var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[onlineCourse].dates);
@@ -139,7 +163,7 @@ var work = {
 		var formattedHeader = HTMLworkHeader
 		$(".work-container").prepend(HTMLworkHeader);
 
-		for (job in work.jobs) {
+		for (var job in work.jobs) {
 			var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
 			var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
 			var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
@@ -188,11 +212,11 @@ var projects = {
 	],
 	"display" : function() {
 		$('.portfolio-container').prepend(HTMLprojectHeader);
-		for (project in projects.projects) {
+		for (var project in projects.projects) {
 			var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
 			var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);	
 			var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-			var formattedProjectInfo = (formattedTitle + formattedDates + formattedDescription)
+			var formattedProjectInfo = (formattedTitle + formattedDates + formattedDescription);
 			$(".portfolio-row:last").append(formattedProjectInfo);
 
 			if (projects.projects[project].images.length > 0) {

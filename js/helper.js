@@ -24,7 +24,7 @@ var HTMLonlineURL = ' <a href=%data%>Certification</a></p></article></div>';
 
 // Skills Section //
 var HTMLskillsHeader = '<header class="section-header skills-header-info text-center"><header class="section-header"><h2 class="section-title"><span>Skills</span></h2><div class="spacer"></div><p class="section-subtitle">Technical proficiencies</p></header></header>';
-var HTMLskillsItem = '<div class="col-md-2 text-center"><div class="chart" data-percent="50" data-scale-color="#ffb400"><p>%data%</p></div></div>';
+var HTMLskillsItem = '<div class="col-md-2 text-center"><div class="chart" data-percent="%percentage%" data-scale-color="#ffb400"><p>%data%</p></div></div>';
 
 // Work Section //
 var HTMLworkHeader = '<header class="section-header work-header-info text-center"><header class="section-header"><h2 class="section-title"><span>Experience</span></h2><div class="spacer"></div><p class="section-subtitle">Where I\'ve worked</p></header></header>';
@@ -75,9 +75,10 @@ $(document).click(function(loc) {
 // PIE CHART JS //
 $(function() {
   $('.chart').easyPieChart({
-      barColor: '#3498db',
-      size: '150',
-      easing: 'easeOutBounce'
+    barColor: '#3498db',
+    size: '150',
+    lineWidth: '2',
+    easing: 'easeOutBounce',
   });
 });
 

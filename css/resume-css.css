@@ -39,6 +39,20 @@ a:hover {
 	margin-bottom: 15px;
 }
 
+.hire-me {
+	background-color: transparent;
+	border: 1px solid;
+	color: black;
+	border-color: black;
+	border-radius: 0;
+}
+
+.hire-me:hover {
+	background-color: white;
+	border-color: white;
+	color: black;
+}
+
 .layer { /*Layer over image to improve text readability*/
 	background-color: rgba(285, 285, 290, 0.45);
 	position: absolute;
