@@ -59,7 +59,7 @@ var bio = {
 		$('.profile-info').append(HTMLprofilePara);
 
 		for (var skill in bio.skills) {
-			var HTMLskillsChart = HTMLskillsItem.replace("%percentage%", bio.skills[skill].percentage)
+			var HTMLskillsChart = HTMLskillsItem.replace("%percentage%", bio.skills[skill].percentage);
 			var formattedSkill = HTMLskillsChart.replace("%data%", bio.skills[skill].name);
 			$(".skills-list").append(formattedSkill);
 		}
@@ -160,7 +160,7 @@ var work = {
 		}
 	],
 	"display" : function() {
-		var formattedHeader = HTMLworkHeader
+		var formattedHeader = HTMLworkHeader;
 		$(".work-container").prepend(HTMLworkHeader);
 
 		for (var job in work.jobs) {
