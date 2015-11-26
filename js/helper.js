@@ -2,7 +2,7 @@ var HTMLspacer = '<div class="spacer"></div>';
 
 // Personal Profile Section //
 var HTMLprofileHeader = '<header class="section-header profile-header-info text-center"><h2 class="section-title"><span>Personal Profile</span></h2><div class="spacer"></div><p class="section-subtitle">Developing the web developer</p></header>';
-var HTMLprofilePic = '<div class="col-md-3"><div class="profile"><img class="img-responsive" src="https://placeimg.com/555/333/tech" alt="Game Image"/></div></div>';
+var HTMLprofilePic = '<div class="col-md-3"><div class="profile"><img class="img-responsive" src="http://i.imgur.com/bh6AwL0m.png" alt="Game Image"/></div></div>';
 var HTMLprofilePara = '<div class="col-md-9 profile-para"></div>';
 var HTMLprofileInfo = '<p>%data%</p>';
 
@@ -160,7 +160,7 @@ function initializeMap() {
     function toggleBounce() {
       if (marker.getAnimation() != null) {
         marker.setAnimation(null);
-      } 
+      }
       else {
         marker.setAnimation(google.maps.Animation.BOUNCE);
       }
@@ -270,6 +270,6 @@ The International Name challenge in Lesson 2 where you'll create a function that
 // $(document).ready(function() {
 //   $('button').click(function() {
 //     var iName = inName() || function(){};
-//     $('#name').html(iName);  
+//     $('#name').html(iName);
 //   });
 // });

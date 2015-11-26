@@ -12,6 +12,10 @@ hr { /* Line between Jumbotron and Featured Work*/
 	margin-top: 0px;
 }
 
+.moveme {
+	margin-top: 140px;
+}
+
 .photo {
 /*  display: block;*/
   margin: 0 auto 10px;

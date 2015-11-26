@@ -1,6 +1,6 @@
 // HOVER JS //
 $(document).ready(function() {
-	$("[rel='tooltip']").tooltip();    
+	$("[rel='tooltip']").tooltip();
 	$('.thumbnail').hover(
 		function(){
 			$(this).find('.caption').fadeIn(250); //slideDown(250)
@@ -8,7 +8,7 @@ $(document).ready(function() {
 		function(){
 			$(this).find('.caption').fadeOut(250); //.slideDown(205)
 		}
-	); 
+	);
 });
 
 var bio = {
@@ -43,7 +43,7 @@ var bio = {
 	}
 	// "HTML", "CSS", "JavaScript", "jQuery", "Python", "WordPress"
 	],
-	"picture" : "https://placeimg.com/555/333/tech",
+	"picture" : "http://i.imgur.com/bh6AwL0m.png",
 	"contacts" : {
 		"mobile" : "604-442-7825",
 		"email" : "sherman.sy.hui@gmail.com",
@@ -81,7 +81,7 @@ var education = {
 			"dates" : "2009 - 2014",
 			"description" : "As a student at UBC some of his best learning experiences came from his active involvment many extracurricular activities. He was the 2013 Community Deparment head of the largest social club on campus, the Chinese Varsity Club. Spear heading community initiatives such as blood drives, community driven campus-wide games, and other small scale volunteer events, taught him how to delegate and plan large events. Sherman was also CVC's executive of the year in 2014. He was also involved as an amabassador to first-year UBC students as a Orientations Leader, responsible for being their first point of contact on campus and working with a selected professor to organize their first lecture."
 		}
-	], 
+	],
 	"onlineCourses" : [
 		{
 			"title" : "Introduction to Python (Part I)",
@@ -93,7 +93,7 @@ var education = {
 			"title" : "Introduction to Python (Part II)",
 			"school" : "Rice University",
 			"dates" : "May 2015",
-			"url" : "https://www.coursera.org/account/accomplishments/verify/XXR7CGJCSC"	
+			"url" : "https://www.coursera.org/account/accomplishments/verify/XXR7CGJCSC"
 		},
 		{
 			"title" : "Front End Developer Nanodegree",
@@ -214,7 +214,7 @@ var projects = {
 		$('.portfolio-container').prepend(HTMLprojectHeader);
 		for (var project in projects.projects) {
 			var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-			var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);	
+			var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
 			var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
 			var formattedProjectInfo = (formattedTitle + formattedDates + formattedDescription);
 			$(".portfolio-row:last").append(formattedProjectInfo);
