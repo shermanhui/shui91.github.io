@@ -12,6 +12,10 @@ hr { /* Line between Jumbotron and Featured Work*/
 	margin-top: 0px;
 }
 
+.white {
+	color: white !important;
+}
+
 .top-buffer {
 	margin-top: 20px;
 	padding-top: 30px;
