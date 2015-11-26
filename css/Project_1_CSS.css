@@ -69,10 +69,10 @@ html,body {
 	max-width: 100%;
 	background-position: center;
 	background-size: cover;
-	background-image: url('https://placeimg.com/1024/700/any');
+	background-image: url('http://i.imgur.com/7iL9EjI.jpg');
 }
 
-.container-full-bg .container, 
+.container-full-bg .container,
 .container-full-bg .container .jumbotron {
 	height: 100%;
 	width: 100%;
@@ -116,7 +116,7 @@ html,body {
 	overflow: hidden;
 	border: 0;
 }
- 
+
 .caption {
 	position: absolute;
 	top: 0;
