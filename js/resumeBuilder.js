@@ -27,15 +27,15 @@ var bio = {
 	},
 	{
 		"name" : "JavaScript",
-		"percentage" : 50
+		"percentage" : 80
 	},
 	{
 		"name" : "jQuery",
 		"percentage" : 50
 	},
 	{
-		"name" : "Python",
-		"percentage" : 55
+		"name" : "MV* Frameworks",
+		"percentage" : 85
 	},
 	{
 		"name" : "WordPress",
@@ -139,10 +139,10 @@ var work = {
 	"jobs" : [
 		{
 			"employer" : "TD Canada Trust",
-			"title" : "Customer Service Representative",
+			"title" : "Financial Service Representative",
 			"location" : "8100 No.2 Road Unit 145, Richmond, BC",
 			"dates" : "September 2014 to present",
-			"description" : "As the first point of contact for clients at one of Canada's five big banks, my responsibilities included delivering legendary service and personalized advice for clients."
+			"description" : "As the first point of contact for clients at one of Canada's five big banks, my responsibilities included delivering legendary service and personalized financial advice."
 		},
 		{
 			"employer" : "University of British Columbia",
@@ -180,32 +180,32 @@ var work = {
 var projects = {
 	"projects" : [
 		{
-			"title" : "Portfolio Website",
-			"dates" : "May 2015",
-			"description" : "Built an online portfolio to display past projects",
+			"title" : "Calorie Tracker",
+			"dates" : " ",
+			"description" : "Using BackboneJS, the Nutritionix API, and Firebase I built a calorie tracker with persistent storage",
 			"images" : [
 				{
-					"image 1" : "https://placeimg.com/555/333/tech"
+					"image 1" : "http://i.imgur.com/dUTGP2qm.png"
 				}
 			]
 		},
 		{
-			"title" : "Filler Project",
-			"dates" : "May 2015",
-			"description" : "Built an online portfolio to display past projects",
+			"title" : "Neighbourhood Map",
+			"dates" : " ",
+			"description" : "Using KnockoutJS, OOJS, and various Web APIs, I built a simple pub crawl app",
 			"images" : [
 				{
-					"image 1" : "https://placeimg.com/555/333/tech"
+					"image 1" : "http://i.imgur.com/uVWPgAgm.png"
 				}
 			]
 		},
 		{
-			"title" : "Filler Website",
-			"dates" : "May 2015",
-			"description" : "Built an online portfolio to display past projects",
+			"title" : "Asteroids Clone",
+			"dates" : " ",
+			"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
 			"images" : [
 				{
-					"image 1" : "https://placeimg.com/555/333/tech"
+					"image 1" : "http://i.imgur.com/2IF5sX2m.png"
 				}
 			]
 		}
