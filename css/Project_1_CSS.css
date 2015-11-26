@@ -27,8 +27,12 @@ hr { /* Line between Jumbotron and Featured Work*/
   border-radius: 50% !important;
 }
 
-.white {
-	color: #696969 !important;
+.white{
+	color: white !important;
+}
+
+.gray {
+	color: #000000 !important;
 }
 
 .top-buffer {
